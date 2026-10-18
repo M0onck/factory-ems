@@ -1,0 +1,6 @@
+{
+    "SHARED_MODULE": {
+        "CHECKBOX_REQUIRED_TO_BE_CHECKED": "必须勾选此复选框。",
+        "PERSON_NAME_PROHIBITED_CHARACTERS": "{{formControlValue}} 至少包含以下无效字符之一：{{invalidCharacters}}。"
+    }
+}

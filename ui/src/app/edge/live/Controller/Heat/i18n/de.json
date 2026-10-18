@@ -1,0 +1,36 @@
+{
+    "HEAT": {
+        "HOME": {
+            "CHOSEN_MODE": "Ausgewählter Modus"
+        },
+        "READ_ONLY": {
+            "NOT_AVAILABLE": "Im Read-only-Modus nicht verfügbar."
+        },
+        "SCHEDULE": {
+            "END_TEMPERATURE": "Endtemperatur",
+            "MANUAL_EVENTS": "Manuelle Events",
+            "MODE": "Heizmodus",
+            "MODE_SELECTION_PLACEHOLDER": "Auswählen",
+            "SCHEDULE": "Zeitplan",
+            "SMART_EVENT": "Smart Event",
+            "SMART_EVENTS": "Smart Events",
+            "SMART_EVENT_END": "Morgen 7:00"
+        },
+        "SETTINGS": {
+            "MODE": {
+                "FAST_HEAT": {
+                    "DESCRIPTION": "Der Heizstab versucht, mit der maximal möglichen Heizstufe auf die maximal eingestellte Temperatur zu heizen.\nDie maximale Leistungsdauer beträgt 10 h.\nNach dieser Zeit macht der Heizstab eine Stunde Pause.",
+                    "TITLE": "Schnell heizen"
+                },
+                "OFF": {
+                    "TITLE": "Keine Beheizung"
+                },
+                "SURPLUS": {
+                    "DESCRIPTION": "Die Aktivierung erfolgt automatisch, perfekt angepasst an die überschüssige und verfügbare PV-Energie.",
+                    "TITLE": "PV-Überschuss"
+                }
+            },
+            "NO_SETTINGS_AVAILABLE": "Keine Einstellungen verfügbar."
+        }
+    }
+}

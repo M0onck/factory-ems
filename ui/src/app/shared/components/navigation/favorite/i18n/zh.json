@@ -1,0 +1,9 @@
+{
+    "FAVORITES": {
+        "ADDED_FAVORITE": "已添加",
+        "DESCRIPTION_OTHERS": "系统所有者可以使用心形图标将内容标记为收藏。这样以后就能在这里轻松找到。",
+        "DESCRIPTION_OWNER": "用心形标记内容，以便日后轻松找到。您选择的内容将显示在这里。",
+        "INFO": "关注重要事项",
+        "REMOVED_FAVORITE": "已移除"
+    }
+}

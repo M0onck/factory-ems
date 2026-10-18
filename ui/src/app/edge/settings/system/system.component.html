@@ -1,0 +1,47 @@
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      @if (canSeeSystemRestart) {
+        <ion-col size="12" size-sm="8">
+          <oe-maintenance></oe-maintenance>
+        </ion-col>
+      }
+      <ion-col size="12" size-sm="8">
+        <ion-card>
+          <ngx-spinner [name]="spinnerId"></ngx-spinner>
+          @if (edge) {
+            <ion-item color="light">
+              <ion-icon slot="start" name="cloud-download-outline" color="primary"></ion-icon>
+              <ion-label>
+                <span>{{ "EDGE.INDEX.SYSTEMUPDATE" | translate }}</span>
+                @if (environment.backend === "OpenEMS Backend") {
+                  <span> {{ "GENERAL.FOR" | translate }} {{ edge.id }}</span>
+                }
+              </ion-label>
+            </ion-item>
+            <ion-card-content>
+              <oe-system-update [edge]="edge"></oe-system-update>
+            </ion-card-content>
+          }
+        </ion-card>
+
+        @for (updateableState of allowedUpdateables(); track updateableState.updateable.id) {
+          <oe-updateable-card [updateableState]="updateableState" (executeUpdate)="executeUpdate($event)"> </oe-updateable-card>
+        }
+
+        @if (updateablesForOnlyAdmins().length !== 0) {
+          @if (edge.roleIsAtLeast(Role.ADMIN)) {
+            <ion-item-divider>
+              <ion-label>{{ "GENERAL.VISIBLE_FOR_ADMINS_ONLY" | translate }}</ion-label>
+            </ion-item-divider>
+          }
+          @for (updateableState of updateablesForOnlyAdmins(); track updateableState.updateable.id) {
+            <oe-updateable-card [updateableState]="updateableState" (executeUpdate)="executeUpdate($event)"> </oe-updateable-card>
+          }
+        }
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <changelog></changelog>
+</ion-content>

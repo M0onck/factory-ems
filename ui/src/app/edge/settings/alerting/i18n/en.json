@@ -1,0 +1,9 @@
+{
+    "ALERTING": {
+        "CHECKBOX_HELP": "When the event occurs, you will receive an e-mail after the set delay time.",
+        "DELAY": "Delay",
+        "FAULT": "Fault",
+        "ONLINE_STATUS": "Online-State",
+        "OTHER_USERS": "Other Users"
+    }
+}

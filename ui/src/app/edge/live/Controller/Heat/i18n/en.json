@@ -1,0 +1,36 @@
+{
+    "HEAT": {
+        "HOME": {
+            "CHOSEN_MODE": "Selected mode"
+        },
+        "READ_ONLY": {
+            "NOT_AVAILABLE": "Not available in read-only mode."
+        },
+        "SCHEDULE": {
+            "END_TEMPERATURE": "End temperature",
+            "MANUAL_EVENTS": "Manual Events",
+            "MODE": "Heating mode",
+            "MODE_SELECTION_PLACEHOLDER": "Select",
+            "SCHEDULE": "Schedule",
+            "SMART_EVENT": "Smart Event",
+            "SMART_EVENTS": "Smart Events",
+            "SMART_EVENT_END": "Tomorrow 7:00"
+        },
+        "SETTINGS": {
+            "MODE": {
+                "FAST_HEAT": {
+                    "DESCRIPTION": "The heating rod automatically selects the equivalent heating level.\nThe maximum power duration is 10 hours.\nAfter that, it makes 1h pause.",
+                    "TITLE": "Fast heat"
+                },
+                "OFF": {
+                    "TITLE": "No heating"
+                },
+                "SURPLUS": {
+                    "DESCRIPTION": "Enables even heating of different buffer tanks. Activation happens automatically, perfectly adapted to your excess and available PV energy.",
+                    "TITLE": "PV surplus"
+                }
+            },
+            "NO_SETTINGS_AVAILABLE": "No settings available."
+        }
+    }
+}

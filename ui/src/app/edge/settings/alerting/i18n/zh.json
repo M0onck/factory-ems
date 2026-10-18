@@ -1,0 +1,9 @@
+{
+    "ALERTING": {
+        "CHECKBOX_HELP": "当事件发生时，您将在设定的延迟时间后收到电子邮件。",
+        "DELAY": "延迟",
+        "FAULT": "故障",
+        "ONLINE_STATUS": "在线状态",
+        "OTHER_USERS": "其他用户"
+    }
+}

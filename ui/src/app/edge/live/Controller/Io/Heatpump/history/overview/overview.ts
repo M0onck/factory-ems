@@ -1,0 +1,64 @@
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ReactiveFormsModule } from "@angular/forms";
+import { ActivatedRoute } from "@angular/router";
+import { ModalController } from "@ionic/angular";
+import { TranslateService } from "@ngx-translate/core";
+import { CommonUiModule } from "src/app/shared/common-ui.module";
+import { AbstractHistoryChartOverview } from "src/app/shared/components/chart/abstractHistoryChartOverview";
+import { ChartComponentsModule } from "src/app/shared/components/chart/chart.module";
+import { ChartTypes } from "src/app/shared/components/chart/chart.types";
+import { HistoryDataErrorModule } from "src/app/shared/components/history-data-error/history-data-error.module";
+import { PickdateComponentModule } from "src/app/shared/components/pickdate/pickdate.module";
+import { LocaleProvider } from "src/app/shared/provider/locale-provider";
+import { Service } from "src/app/shared/shared";
+import { Language } from "src/app/shared/type/language";
+import { SharedControllerIoHeatpump } from "../../shared/shared";
+import { ChartComponent } from "../chart/chart";
+import cz from "../shared/i18n/cz.json";
+import de from "../shared/i18n/de.json";
+import en from "../shared/i18n/en.json";
+import es from "../shared/i18n/es.json";
+import fr from "../shared/i18n/fr.json";
+import ja from "../shared/i18n/ja.json";
+import nl from "../shared/i18n/nl.json";
+import zh from "../shared/i18n/zh.json";
+
+@Component({
+    selector: "controller-io-heatpump-overview",
+    templateUrl: "./overview.html",
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.Eager,
+    imports: [
+        CommonUiModule,
+        LocaleProvider,
+        ReactiveFormsModule,
+        ChartComponent,
+        ChartComponentsModule,
+        PickdateComponentModule,
+        HistoryDataErrorModule,
+    ],
+})
+export class ControllerIoHeatpumpOverviewComponent extends AbstractHistoryChartOverview {
+    protected readonly STATES = SharedControllerIoHeatpump.getHeatPumpStates(this.translate);
+    protected chartType: "line" | "bar" = "line";
+
+    constructor(
+        public override service: Service,
+        protected override route: ActivatedRoute,
+        public override modalCtrl: ModalController,
+        private translate: TranslateService,
+    ) {
+        super(service, route, modalCtrl);
+        Language.normalizeAdditionalTranslationFiles({ cs: cz, de: de, en: en, es: es, fr: fr, ja: ja, nl: nl, zh: zh }).then(
+            (translations) => {
+                for (const { lang, translation, shouldMerge } of translations) {
+                    translate.setTranslation(lang, translation, shouldMerge);
+                }
+            },
+        );
+    }
+
+    protected setChartConfig(event: ChartTypes.ChartConfig) {
+        this.chartType = event.chartType;
+    }
+}

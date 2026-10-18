@@ -1,0 +1,17 @@
+{
+    "IO_HEATING_ROOM": {
+        "HOME": {
+            "AMBIENT_ACTUAL": "环境温度",
+            "AMBIENT_TARGET": "环境目标温度",
+            "FLOOR_ACTUAL": "地板温度",
+            "FLOOR_TARGET": "地板目标温度",
+            "POWER_CONSUMPTION": "功率消耗",
+            "UPCOMING_EVENTS": "即将到来的事件"
+        },
+        "MODE": {
+            "MANUAL_HIGH": "高",
+            "MANUAL_LOW": "低",
+            "TITLE": "供暖模式"
+        }
+    }
+}

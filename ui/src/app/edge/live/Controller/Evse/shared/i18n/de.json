@@ -1,0 +1,73 @@
+{
+    "EVSE_SINGLE": {
+        "HOME": {
+            "ACTUAL_MODE": {
+                "LABEL": "Aktiver Modus"
+            },
+            "ENERGY_SINCE_START": "Energie seit Ladebeginn",
+            "MODE": {
+                "FORCE": "Schnell",
+                "LABEL": "Grundmodus",
+                "MINIMUM": "Minimal",
+                "SURPLUS": "PV",
+                "ZERO": "Aus"
+            },
+            "POWER": "Leistung",
+            "STATE_MACHINE": {
+                "CHARGING": "Lädt",
+                "EV_CONNECTED": "EV verbunden",
+                "EV_NOT_CONNECTED": "EV nicht verbunden",
+                "FINISHED_ENERGY_SESSION_LIMIT": "Ladevorgang beendet durch Energielimit",
+                "FINISHED_EV_STOP": "Ladevorgang beendet durch EV",
+                "LABEL": "Status",
+                "PHASE_SWITCH": "Manuelles Phasenwechseln",
+                "PHASE_SWITCH_TO_SINGLE_PHASE": "Wechsel auf 1-phasig",
+                "PHASE_SWITCH_TO_THREE_PHASE": "Wechsel auf 3-phasig"
+            },
+            "VEHICLES": "App Center Fahrzeuge"
+        },
+        "SCHEDULE": {
+            "ACCEPT": "Übernehmen",
+            "ADD": "Hinzufügen",
+            "ADD_ERROR": "Task konnte nicht hinzugefügt werden",
+            "ADD_SUCCESS": "Task erfolgreich hinzugefügt",
+            "DAY": {
+                "FRIDAY": "Freitag",
+                "MONDAY": "Montag",
+                "SATURDAY": "Samstag",
+                "SUNDAY": "Sonntag",
+                "THURSDAY": "Donnerstag",
+                "TUESDAY": "Dienstag",
+                "WEDNESDAY": "Mittwoch"
+            },
+            "DELETE": "Löschen",
+            "DELETE_ERROR": "Task konnte nicht gelöscht werden",
+            "DELETE_SUCCESS": "Task erfolgreich gelöscht",
+            "DURATION": "Dauer",
+            "EDIT": "Bearbeiten",
+            "EDIT_ERROR": "Task konnte nicht angepasst werden",
+            "EDIT_SUCCESS": "Task erfolgreich angepasst",
+            "END": "Ende",
+            "FREQ": {
+                "DAILY": "Täglich",
+                "MONTHLY": "Monatlich",
+                "WEEKLY": "Wöchentlich",
+                "YEARLY": "Jährlich"
+            },
+            "FREQUENCY": "Wiederholung",
+            "MODE": "Lademodus",
+            "MODE_SELECTION_PLACEHOLDER": "Lademodus auswählen",
+            "SMART_EVENT_TITLE": "Smarte Beladung von {{kwh}} kWh",
+            "START": "Start",
+            "VALIDATION_ERROR_1": "Bitte Startzeit angeben",
+            "VALIDATION_ERROR_2": "Bitte Endzeit angeben",
+            "VALIDATION_ERROR_3": "Bitte Lademodus auswählen",
+            "VALIDATION_ERROR_4": "Bitte Startzeit im Format HH:mm und nur in Viertelstunden (00, 15, 30 oder 45 Minuten) angeben",
+            "VALIDATION_ERROR_5": "Bitte Endzeit im Format HH:mm und nur in Viertelstunden (00, 15, 30 oder 45 Minuten) angeben",
+            "VALIDATION_ERROR_6": "Endzeit muss nach Startzeit liegen"
+        },
+        "SETTINGS": {
+            "ENERGY_LIMIT": "Energielimit"
+        }
+    }
+}

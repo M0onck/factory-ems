@@ -1,0 +1,23 @@
+{
+    "STORAGE": {
+        "ADMIN_MODAL": {
+            "BUTTONS": {
+                "RESTART": "再次执行",
+                "START": "执行"
+            },
+            "SOH": {
+                "CAPACITY_MEASURING": "正在测量容量",
+                "ENABLED_INFO": "ESS SoH 循环控制器已启用",
+                "ERROR": "SoH 循环期间发生错误。请检查系统日志以获取更多详细信息。",
+                "INFO": "通过执行测试循环来测量电池容量，从而计算健康状态 (SOH)。该过程可能需要数小时，具体取决于电池的类型和大小。建议仅在电池未使用时执行测试循环。",
+                "MEASURED_CAPACITY": "已测容量",
+                "RESTART_CONFIRMATION_TITLE": "确认再次执行",
+                "RESTART_WARNING": "重新启动 SoH 循环将重置当前测量值并开始新的循环。您确定要重新启动吗？",
+                "SOH_PERCENT": "SoH",
+                "STATE_MACHINE_LABEL": "状态",
+                "TITLE": "容量测定",
+                "TITLE_TIP": "仅对管理员可见"
+            }
+        }
+    }
+}

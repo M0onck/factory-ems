@@ -1,0 +1,36 @@
+{
+    "HEAT": {
+        "HOME": {
+            "CHOSEN_MODE": "所选模式"
+        },
+        "READ_ONLY": {
+            "NOT_AVAILABLE": "只读模式下不可用。"
+        },
+        "SCHEDULE": {
+            "END_TEMPERATURE": "结束温度",
+            "MANUAL_EVENTS": "手动事件",
+            "MODE": "供暖模式",
+            "MODE_SELECTION_PLACEHOLDER": "选择",
+            "SCHEDULE": "排程",
+            "SMART_EVENT": "智能事件",
+            "SMART_EVENTS": "智能事件",
+            "SMART_EVENT_END": "明天 7:00"
+        },
+        "SETTINGS": {
+            "MODE": {
+                "FAST_HEAT": {
+                    "DESCRIPTION": "加热棒会自动选择等效的加热等级。\n最大功率持续时间为 10 小时。\n之后它会暂停 1 小时。",
+                    "TITLE": "快速加热"
+                },
+                "OFF": {
+                    "TITLE": "不加热"
+                },
+                "SURPLUS": {
+                    "DESCRIPTION": "实现不同缓冲水箱的均匀加热。激活会自动进行，并完美适配您的盈余与可用的光伏能量。",
+                    "TITLE": "光伏盈余"
+                }
+            },
+            "NO_SETTINGS_AVAILABLE": "没有可用的设置。"
+        }
+    }
+}

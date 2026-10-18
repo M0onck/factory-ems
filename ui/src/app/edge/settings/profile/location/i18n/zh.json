@@ -1,0 +1,17 @@
+{
+    "SETTINGS_PROFILE_LOCATION": {
+        "ADRESS_IS_VALIDATED": "位置已验证",
+        "EDIT": "编辑",
+        "EDIT_CARD_INFO": "为验证系统位置，仅会存储经度和纬度。",
+        "EDIT_CARD_SUBTITLE": "位置数据是出于服务和保修目的而验证的。",
+        "EDIT_CARD_TITLE": "验证您系统的位置",
+        "LATITUDE": "纬度",
+        "LOCATION": "位置",
+        "LONGITUDE": "经度",
+        "NOT_VALIDATED": "请验证您系统的位置。",
+        "SUCCESSFULL_VALIDATION": "验证成功！",
+        "SYSTEM_LOCATION": "系统位置",
+        "TO_VALIDATION": "前往验证",
+        "VALIDATED": "已验证"
+    }
+}

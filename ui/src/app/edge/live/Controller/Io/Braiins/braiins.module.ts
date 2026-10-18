@@ -1,0 +1,52 @@
+import { CommonModule } from "@angular/common";
+import { NgModule } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
+import { ComponentsBaseModule } from "src/app/shared/components/components.module";
+import { ModalModule } from "src/app/shared/components/modal/modal.module";
+import { ScheduleComponent } from "src/app/shared/components/schedule/schedule.component";
+import { SharedModule } from "src/app/shared/shared.module";
+import { Language } from "src/app/shared/type/language";
+import { ControllerBraiinsModeChartComponent } from "./new-navigation/chart/mode-chart";
+import { ControllerBraiinsManagedConsumptionChartComponent } from "./new-navigation/chart/power-chart";
+import { ControllerBraiinsHomeComponent } from "./new-navigation/new-navigation";
+import { ControllerBraiinsModeComponent } from "./pages/mode/mode";
+import { ControllerBraiinsScheduleComponent } from "./pages/schedule/schedule.component";
+import { ControllerBraiinsAddTaskComponent } from "./pages/schedule/task/add/add";
+import { ControllerBraiinsEditTaskComponent } from "./pages/schedule/task/edit/edit";
+import cz from "./shared/i18n/cz.json";
+import de from "./shared/i18n/de.json";
+import en from "./shared/i18n/en.json";
+import es from "./shared/i18n/es.json";
+import fr from "./shared/i18n/fr.json";
+import ja from "./shared/i18n/ja.json";
+import nl from "./shared/i18n/nl.json";
+import zh from "./shared/i18n/zh.json";
+
+@NgModule({
+    imports: [
+        SharedModule,
+        ModalModule,
+        CommonModule,
+        ComponentsBaseModule,
+        ControllerBraiinsHomeComponent,
+        ScheduleComponent,
+        ControllerBraiinsScheduleComponent,
+        ControllerBraiinsAddTaskComponent,
+        ControllerBraiinsEditTaskComponent,
+        ControllerBraiinsManagedConsumptionChartComponent,
+        ControllerBraiinsModeChartComponent,
+    ],
+    declarations: [ControllerBraiinsModeComponent],
+    exports: [ControllerBraiinsHomeComponent],
+})
+export class ControllerBraiinsModule {
+    constructor(private readonly translate: TranslateService) {
+        Language.normalizeAdditionalTranslationFiles({ cs: cz, de: de, en: en, es: es, fr: fr, ja: ja, nl: nl, zh: zh }).then(
+            (translations) => {
+                for (const { lang, translation, shouldMerge } of translations) {
+                    translate.setTranslation(lang, translation, shouldMerge);
+                }
+            },
+        );
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "SYSTEM_LOCATION_VALIDATOR": {
+        "ADDRESS_LIST_NOTE_INSTALLATION": "没有列出正确的地址吗？请编辑上方信息并再次执行验证。",
+        "ADDRESS_LIST_NOTE_PROFILE": "没有列出正确的地址吗？如有必要，请更改上方详细信息并再次执行验证。",
+        "ADDRESS_LIST_TITLE": "哪个地址适用于 {{ edgeShortName }}{{ id }} 的位置？",
+        "APPLY_BUTTON_LABEL": "应用",
+        "BUTTON_LABEL_INSTALLATION": "执行验证",
+        "BUTTON_LABEL_PROFILE": "验证地址",
+        "GEO_CODE_RESULT_LABEL": "请选择匹配的地址：",
+        "UNKNOWN_ADDRESS": "坐标将在系统设置中稍后手动录入，以使用全部功能。"
+    }
+}

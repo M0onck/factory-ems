@@ -1,0 +1,73 @@
+{
+    "EVSE_SINGLE": {
+        "HOME": {
+            "ACTUAL_MODE": {
+                "LABEL": "实际模式"
+            },
+            "ENERGY_SINCE_START": "自上次充电开始以来的电量",
+            "MODE": {
+                "FORCE": "快速",
+                "LABEL": "基础模式",
+                "MINIMUM": "最小",
+                "SURPLUS": "PV",
+                "ZERO": "关闭"
+            },
+            "POWER": "功率",
+            "STATE_MACHINE": {
+                "CHARGING": "充电中",
+                "EV_CONNECTED": "电动汽车已连接",
+                "EV_NOT_CONNECTED": "电动汽车未连接",
+                "FINISHED_ENERGY_SESSION_LIMIT": "因电量限制充电结束",
+                "FINISHED_EV_STOP": "由电动汽车结束充电",
+                "LABEL": "状态",
+                "PHASE_SWITCH": "手动换相",
+                "PHASE_SWITCH_TO_SINGLE_PHASE": "切换到单相",
+                "PHASE_SWITCH_TO_THREE_PHASE": "切换到三相"
+            },
+            "VEHICLES": "应用中心车辆"
+        },
+        "SCHEDULE": {
+            "ACCEPT": "接受",
+            "ADD": "添加",
+            "ADD_ERROR": "无法添加任务",
+            "ADD_SUCCESS": "任务添加成功",
+            "DAY": {
+                "FRIDAY": "星期五",
+                "MONDAY": "星期一",
+                "SATURDAY": "星期六",
+                "SUNDAY": "星期日",
+                "THURSDAY": "星期四",
+                "TUESDAY": "星期二",
+                "WEDNESDAY": "星期三"
+            },
+            "DELETE": "删除",
+            "DELETE_ERROR": "无法删除任务",
+            "DELETE_SUCCESS": "任务删除成功",
+            "DURATION": "持续时间",
+            "EDIT": "编辑",
+            "EDIT_ERROR": "无法自定义任务",
+            "EDIT_SUCCESS": "任务调整成功",
+            "END": "结束",
+            "FREQ": {
+                "DAILY": "每天",
+                "MONTHLY": "每月",
+                "WEEKLY": "每周",
+                "YEARLY": "每年"
+            },
+            "FREQUENCY": "重复",
+            "MODE": "充电模式",
+            "MODE_SELECTION_PLACEHOLDER": "选择",
+            "SMART_EVENT_TITLE": "{{kwh}} kWh 智能充电",
+            "START": "开始",
+            "VALIDATION_ERROR_1": "请指定开始时间",
+            "VALIDATION_ERROR_2": "请指定结束时间",
+            "VALIDATION_ERROR_3": "请选择充电模式",
+            "VALIDATION_ERROR_4": "请以 HH:mm 格式指定开始时间，且仅限整刻钟（00、15、30 或 45 分钟）",
+            "VALIDATION_ERROR_5": "请以 HH:mm 格式指定结束时间，且仅限整刻钟（00、15、30 或 45 分钟）",
+            "VALIDATION_ERROR_6": "结束时间必须晚于开始时间"
+        },
+        "SETTINGS": {
+            "ENERGY_LIMIT": "电量限制"
+        }
+    }
+}
