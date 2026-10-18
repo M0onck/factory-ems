@@ -16,6 +16,7 @@
                     "options": {
                         "allowedCommonJsDependencies": [
                             "chart.js",
+                            "mousetrap",
                             "patternomaly",
                             "tinyduration"
                         ],

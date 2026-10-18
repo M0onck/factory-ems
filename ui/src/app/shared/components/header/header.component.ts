@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit, OnDestroy, AfterViewChecked {
     public environment = environment;
     public backUrl: string | boolean = "/";
     public enableSideMenu: boolean;
-    public currentPage: "EdgeSettings" | "Other" | "IndexLive" | "IndexHistory" = "Other";
+    public currentPage: "EdgeSettings" | "Other" | "IndexLive" | "IndexHistory" | "IndexTopology" = "Other";
     public isSystemLogEnabled: boolean = false;
 
     protected isHeaderAllowed: boolean = true;
@@ -124,7 +124,7 @@ export class HeaderComponent implements OnInit, OnDestroy, AfterViewChecked {
         const file = urlArray.pop();
 
         // disable backUrl for History & EdgeIndex Component ++ Enable Segment Navigation
-        if ((file == "history" || file == "live") && urlArray.length == 3) {
+        if ((file == "history" || file == "live" || file == "topology") && urlArray.length == 3) {
             this.backUrl = false;
             return;
         }
@@ -162,9 +162,11 @@ export class HeaderComponent implements OnInit, OnDestroy, AfterViewChecked {
             file = urlArray[3];
         }
         // Enable Segment Navigation for Edge-Index-Page
-        if ((file == "history" || file == "live") && urlArray.length == 3) {
+        if ((file == "history" || file == "live" || file == "topology") && urlArray.length == 3) {
             if (file == "history") {
                 this.currentPage = "IndexHistory";
+            } else if (file == "topology") {
+                this.currentPage = "IndexTopology";
             } else {
                 this.currentPage = "IndexLive";
             }
@@ -184,6 +186,10 @@ export class HeaderComponent implements OnInit, OnDestroy, AfterViewChecked {
             /** Creates bug of being infinite forwarded betweeen live and history, if not relatively routed */
             // this.router.navigate(["../history"], { relativeTo: this.route });
             this.navCtrl.navigateRoot(["/device/" + this.service.currentEdge().id + "/history"]);
+            this.cdRef.detectChanges();
+        }
+        if (event.detail.value == "IndexTopology") {
+            this.navCtrl.navigateRoot(["/device/" + this.service.currentEdge().id + "/topology"]);
             this.cdRef.detectChanges();
         }
     }

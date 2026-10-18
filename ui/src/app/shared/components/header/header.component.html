@@ -23,7 +23,7 @@
       }
 
       @if (service.currentEdge(); as edge) {
-        @if ((currentPage === "IndexLive" || currentPage === "IndexHistory") && navigationService.position() !== null && navigationService.position() === "disabled" && !isNewNavigation) {
+        @if ((currentPage === "IndexLive" || currentPage === "IndexHistory" || currentPage === "IndexTopology") && navigationService.position() !== null && navigationService.position() === "disabled" && !isNewNavigation) {
           <ion-title>
             <ion-segment mode="md" (ionChange)="segmentChanged($event)" [(ngModel)]="currentPage" class="ion-justify-content-center">
               <ion-segment-button tabindex="0" class="focus-visible" style="--indicator-color: var(--ion-segment-button-color); --color: var(--ion-color-primary); color: var(--ion-color-primary); min-width: fit-content" value="IndexLive">
@@ -34,6 +34,11 @@
               <ion-segment-button style="--indicator-color: var(--ion-segment-button-color); --color: var(--ion-color-primary); color: var(--ion-text-color); min-width: fit-content" value="IndexHistory">
                 <ion-label style="color: var(--ion-color-header-contrast)" class="oe-ci-font-family-bold">
                   {{ "GENERAL.HISTORY" | translate }}
+                </ion-label>
+              </ion-segment-button>
+              <ion-segment-button style="--indicator-color: var(--ion-segment-button-color); --color: var(--ion-color-primary); color: var(--ion-text-color); min-width: fit-content" value="IndexTopology">
+                <ion-label style="color: var(--ion-color-header-contrast)" class="oe-ci-font-family-bold">
+                  {{ "GENERAL.TOPOLOGY" | translate }}
                 </ion-label>
               </ion-segment-button>
             </ion-segment>

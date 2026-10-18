@@ -215,6 +215,11 @@ export const routes: Routes = [
             { path: "", redirectTo: "live", pathMatch: "full" },
             ...history(false), // Needs to be set here, because following path "is overwriting history routes"
             {
+                path: "topology",
+                loadComponent: () =>
+                    import("./topology/topology-canvas.component").then((m) => m.TopologyCanvasComponent),
+            },
+            {
                 path: "",
                 loadChildren: () =>
                     import("./shared/components/navigation/navigation-routing.module").then(
