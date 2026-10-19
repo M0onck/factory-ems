@@ -17,6 +17,8 @@ export interface DraftComponent {
     category: TopologyCategory;
     /** 是否来自 EdgeConfig（已持久化）；false 表示画布上新建的草稿节点 */
     persisted: boolean;
+    /** Factory 的 natureIds（用于设备引用类型匹配，如 Simulator 设备按 nature 归为 ess/meter） */
+    natureIds?: string[];
 }
 
 /** 拓扑草稿中的连线 */

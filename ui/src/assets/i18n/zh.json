@@ -869,7 +869,7 @@
         "EMPLOYEE_LOGIN": "员工登录",
         "PASSWORD_LABEL": "密码",
         "PASSWORD_RESET": "重置密码",
-        "PREAMBLE": "请输入您的密码，或提交默认值以访客身份登录。",
+        "PREAMBLE": "请输入密码登录。管理员密码：admin；访客密码：user。",
         "REQUEST_TIMEOUT": "您的请求已超时。请稍后重试。",
         "SIGN_IN": "登录",
         "TITLE": "登录",

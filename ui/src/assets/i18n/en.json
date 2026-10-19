@@ -869,7 +869,7 @@
         "EMPLOYEE_LOGIN": "Employee Login",
         "PASSWORD_LABEL": "Password",
         "PASSWORD_RESET": "Reset Password",
-        "PREAMBLE": "Please enter your password or submit the default value to login as a guest.",
+        "PREAMBLE": "Please enter your password to login. Admin password: admin; guest password: user.",
         "REQUEST_TIMEOUT": "Your request has timed out. Please try again later.",
         "SIGN_IN": "Sign in",
         "TITLE": "Login",
